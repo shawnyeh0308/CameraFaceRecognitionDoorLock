@@ -12,7 +12,7 @@
 #define Green 12
 #include "camera_pins.h"
 
-//密碼不要記起來!!//
+//密碼//
 const char *ssid = " ";
 const char *password = " ";
 
