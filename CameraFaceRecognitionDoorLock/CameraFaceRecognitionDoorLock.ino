@@ -12,9 +12,9 @@
 #define Green 12
 #include "AI_THINKER.h"
 
-//密碼不要記起來!!//
-const char *ssid = "AndroidAP2775";
-const char *password = "mrtf7211";
+//SSID 密碼//
+const char *ssid = "";
+const char *password = "";
 
 void startCameraServer();
 
