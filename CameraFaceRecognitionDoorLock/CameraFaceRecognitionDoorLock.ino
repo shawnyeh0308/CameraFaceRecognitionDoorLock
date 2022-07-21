@@ -10,13 +10,13 @@
 #define Relay 2
 #define Red 13
 #define Green 12
-#include "AI_THINKER.h"
+#include "AI_THINKER.h" //自創H檔，CAMERA_MODEL_AI_THINKER裡的接腳定義、各項參數和esp初始化
 
 //SSID 密碼//
 const char *ssid = "";
 const char *password = "";
 
-void startCameraServer();
+void startCameraServer(); //開啟WEBSERVER
 
 boolean matchFace = false;
 boolean activateRelay = false;
@@ -62,7 +62,7 @@ void setup()
     startCameraServer();
 
     Serial.print("Camera Ready! Use 'http://");
-    Serial.print(WiFi.localIP());
+    Serial.print(WiFi.localIP()); //取得WEBSERVER的IP位址
     Serial.println("' to connect");
 }
 
